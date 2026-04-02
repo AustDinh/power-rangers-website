@@ -1,0 +1,310 @@
+*{  box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    background-image:url(images/texturedbackground.jpg);
+}
+
+h2 {margin-top:1em;
+    font-family:'Roboto', sans-serif;
+    text-align: center;
+    font-size:28px;
+    color:#c8b273;
+    line-height: 2em;   
+}
+
+h1{ padding:2px;
+    font-family:'Roboto', sans-serif;
+    text-align: center;
+    font-size:32px;
+    color:#c8b273;
+}
+
+p{  
+    font-family:'Roboto', sans-serif;
+    font-size:18px;
+    text-align:center;
+    padding: 2em;
+    color:white;
+    line-height: 2em;
+   
+}
+li, a{
+    font-family:'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    color:#f6d80a;
+    text-decoration:none;
+    padding:1.5em;
+    list-style: none;
+    
+}
+
+header{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:10px 10%;
+}
+
+
+.navlinks li{
+    display:inline-block;
+    padding: 0px 10px;
+    
+    
+}
+
+.navlinks li a{
+    transition: all 0.3s ease 0s;
+    
+}
+
+.navlinks li a:hover{
+    color:white;
+    
+}
+
+#heroimage{
+    height:600px;
+    background-image: url(images/mmpr.png);
+    background-repeat:no-repeat;
+    background-size:30% 100%;
+    background-position:center;
+    max-width:100%;
+}
+#heroimage2{
+    height:400px;
+    background-image: url(images/bolt.png);
+    background-repeat:no-repeat;
+    background-size:30% 100%;
+    background-position:center;
+    max-width:100%;
+}
+
+.logo{
+    width:400px;
+}
+
+
+.image-container {
+    display: flex;
+    overflow-x: auto; 
+    justify-content: center;
+  }
+
+  .image-item {
+    flex: 0 0 auto; 
+    margin-right: 10px; 
+    text-align: center; 
+  }
+
+  .image-item img {
+    width: 400px; 
+    height: 300px; 
+    
+    
+  }
+
+  .image-item p {
+    margin: 0; 
+  }
+
+  .seasontitle h1{
+    color:white;
+    font-family:'Roboto', sans-serif;
+    font-size: 48px;
+    text-align: center;
+  }
+
+.seasons_power{
+    background-image: url(images/dinofury.png);
+    height:600px;
+    background-repeat:no-repeat;
+    background-size:35% 100%;
+    background-position:center;
+    margin-top:5em;
+}
+
+.seasons-list{
+    text-align: center;
+}
+ 
+h3{
+    font-family: 'Roboto', sans-serif;
+    color:#c8b273;
+    text-align:center;
+    padding-top:10px;
+    padding-bottom: 10px;;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;   
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    color:#c8b273;
+    
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+
+  .submit_button,
+  .reset_button {
+    background-color:#f6d80a;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight:bold;
+  }
+  
+  .submit_button:hover,
+  .reset_button:hover {
+    background-color: white;
+  }
+
+ .alignment,
+ .nletter{
+    display:flex;
+    flex-direction: row;
+ }
+
+ .alignment input,
+ .nletter input{
+    margin-top: auto;
+    width:5%;
+ }
+
+ .alignment label{
+    width:10%;
+    padding:2px;
+ }
+
+.btop{
+    text-align: center;
+}
+
+.cr_email a{
+    text-align: center;
+    color:white;
+    text-decoration: underline;
+    font-size: 16px;   
+}
+
+.work_cited {
+    text-align:center;
+    list-style-type: none;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border:4px solid #c8b273;
+    border-radius:10px;
+    overflow-wrap: break-word;
+    -webkit-box-shadow: -1px 1px 5px 9px #c8b273;
+    -moz-box-shadow: -1px 1px 5px 9px #c8b273;
+    box-shadow: -1px 1px 5px 9px #c8b273;
+}
+.container{
+    text-align: center;
+    margin:2em;
+}
+
+ @media (max-width: 800px) {
+header {
+    flex-direction: column;
+    align-items: center;    
+    }
+
+.logo{
+    margin-bottom: -140px;
+    }
+
+.navlinks {
+    margin-top: 50px; 
+    }
+
+.navlinks li {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    }
+
+#heroimage {
+    height: 400px; 
+    background-size: cover;
+    }
+
+ .image-container {
+    flex-direction: column;
+    }
+
+.image-item {
+     margin-right: 0;
+     margin-bottom: 10px;
+    }
+h1{
+     margin-bottom:10px;
+     margin-top: 10px;
+    }
+.work_cited li{
+    overflow-wrap: break-word;
+}
+  }
+
+@media (max-width: 1080px) {
+ header {
+    flex-direction: column;
+    flex-wrap:nowrap;
+    align-items: center;
+        
+    }
+.logo{
+     margin-bottom: -140px;
+    }
+
+.navlinks {
+    margin-top: 50px; 
+    }
+
+.nav{
+    display:flex;
+    flex-wrap: nowrap;
+}
+#heroimage {
+    height: 400px; 
+    background-size: cover;
+    }
+
+.image-container {
+    flex-direction: column;
+    }
+
+.image-item {
+    margin-right: 0;
+    margin-bottom: 10px;
+    }
+h1{
+    margin-bottom:10px;
+    margin-top: 1em;
+    }
+ol li img{
+    width:100%;
+    height: auto;
+}
+
+  }
+
+  

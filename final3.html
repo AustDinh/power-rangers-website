@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!---Austin Dinh December 11,2023-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"  type="text/css" href="style.css">
+  <title>Power Rangers Website</title>
+</head>
+<body>
+    <header>
+        <a href="final1.html"><img class="logo" src="./images/Power-Rangers-logo.png" alt="PowerRangers Logo" >
+        </a>
+    <nav>
+        <ul class="navlinks">
+            <li><a href="final1.html">Home</a></li>
+            <li><a href="final2.html">Seasons</a></li>
+            <li><a href="final3.html">Contact</a></li>
+            <li><a href="final4.html">Credit</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h2>Want More Updates on PowerRangers</h2>
+    <h3>Register</h3>
+    <form method="post" action="https://webdevbasics.net/scripts/pacific/php"><!--I used this from a previous assintment, this is where it should take you when submitting the form-->
+        <label class="fName">
+            First Name:
+        </label>
+        <input type="text" id="myName" name="myFname" required>
+
+        <label for="lName" class="lName">
+            Last Name:
+        </label>
+        <input type="text" id="lName" name="lName" required>
+
+        <label for="myEmail">
+            E-mail:
+        </label>
+        <input type="email" id="myEmail" name="myEmail" required>
+
+        <label for="myPhone">
+            Phone Number:
+        </label>
+        <input type="tel" id="myPhone" name="myPhone" maxlength="12">
+
+        <label for="tDate">Date</label>
+        <input type="date" id="tDate" name="tDate">
+
+        <label>Gender:</label>
+    <div class="alignment">
+        <label>Male</label>
+        <input type="radio" id="male" name="gender" value="male">
+    </div>
+    <div class="alignment">
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female">
+    </div>
+    <div class="alignment">
+        <label for="other">Other</label>
+        <input type="radio" id="other" name="gender" value="other">
+    </div>
+    <div>
+        <label for="textArea">Text Area:</label>
+        <textarea id="textArea" rows="4" cols="50" placeholder="Fun fact about yourself"></textarea>
+    </div>
+
+    <label for="selectOption">Favorite Ranger:</label>
+    <select id="selectOption">
+        <option value="option1">Red Ranger</option>
+        <option value="option2">Blue Ranger</option>
+        <option value="option3">Yellow Ranger</option>
+        <option value="option4">Green Ranger</option>
+        <option value="option5">Pink Ranger</option>
+    </select>
+    
+    <div class="nletter">
+       <label for="newsletter">Subscribe to Newsletter:</label>
+       <input type="checkbox" id="newsletter" name="newsletter" checked>
+    </div>
+       <br>
+       <input class="submit_button" type="submit" value="Submit"> 
+       <input class="reset_button" type="reset" value="Reset">
+    
+
+
+
+    </form>
+    
+    <footer>
+        <div class="cr_email">
+        <p>&copy; 2023 Austin Dinh. All rights reserved.<br><a href="mailto:adinh1@stumail.jccc.edu">adinh1@stumail.jccc.edu</a></p>
+        </div>
+        
+      </footer>
+      <nav>
+        <ul class="navlinks">
+            <li><a href="final1.html">Home</a></li>
+            <li><a href="final2.html">Seasons</a></li>
+            <li><a href="final3.html">Contact</a></li>
+            <li><a href="final4.html">Credit</a></li>
+            <li><a href="https://www.facebook.com">Facebook</a></li> <!--This would take yo to the facebook page, i dont have it set up since this isnt a full on website-->
+        </ul>
+    </nav>
+    
+</main>
+</body>
+</html>
